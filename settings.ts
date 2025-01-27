@@ -34,6 +34,11 @@ export const settings = definePluginSettings({
         type: OptionType.NUMBER,
         description: "Size of silliness ;3",
         default: 150,
+    },
+    concurrentMaxwells: {
+        type: OptionType.NUMBER,
+        description: "MaxwellMaxxing (warning this can get too silly)",
+        default: 1,
     }
 });
 

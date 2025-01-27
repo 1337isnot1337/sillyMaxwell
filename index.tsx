@@ -16,13 +16,20 @@ export default definePlugin({
     settings,
     async start() {
         await sleep(5);
-        addGifToScreen();
+        for (let i = 0; i < settings.store.concurrentMaxwells ; i +=1) {
+            addGifToScreen();
+        }
+
     },
     stop() {
-        const gifElement = document.querySelector(".moving-gif");
-        if (gifElement) {
-            gifElement.remove();
+        let gifElement = document.querySelector(".moving-gif");
+        while (gifElement) {
+            if (gifElement) {
+                gifElement.remove();
+            }
+            gifElement = document.querySelector(".moving-gif");
         }
+
     }
 
 
