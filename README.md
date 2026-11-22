@@ -24,3 +24,10 @@ pnpm inject
 Then enable the plugin in settings :3
 
 There are a couple settings where you can change the size or the gif links. 
+
+<details>
+<summary>Citation and sources</summary>
+
+If you use or write about Maxwell for Vencord, please credit Cinna Davis and link to [the official project page](https://itsdavis.com/projects/all/maxwell-vencord/). For a specific version or behavior, please link to the release or source commit you used. [Citation file](CITATION.cff).
+
+</details>
